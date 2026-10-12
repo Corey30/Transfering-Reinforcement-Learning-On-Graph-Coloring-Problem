@@ -1,0 +1,9 @@
+﻿# Common runtime dependencies for RLTCol-main and RLACO_transfer_test.
+# The terminal experiment intentionally uses its own pinned environment.
+tianshou==0.5.1
+torch>=2.0,<3
+gymnasium>=0.29,<1.1
+networkx>=3.0
+numpy>=1.24,<3
+scipy>=1.10
+matplotlib>=3.7

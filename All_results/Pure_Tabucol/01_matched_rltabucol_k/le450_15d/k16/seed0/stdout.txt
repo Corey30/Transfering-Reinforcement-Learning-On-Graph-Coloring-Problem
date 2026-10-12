@@ -1,0 +1,4 @@
+[START] graph=le450_15d.col k=16 seed=0 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=999 returned=5 tabucol_best=5 running_best=5 elapsed=0.251s
+episode=49 start=5 returned=0 tabucol_best=0 running_best=0 elapsed=19.961s
+[DONE] score=0 success=True episodes=49 time=19.961s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\le450_15d\k16\seed0\summary.json

@@ -1,0 +1,45 @@
+2025-09-28 11:59:08.481424: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-09-28 11:59:08.498411: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1759031948.518684    3080 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1759031948.525023    3080 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1759031948.540751    3080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759031948.540771    3080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759031948.540773    3080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1759031948.540775    3080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-09-28 11:59:08.545317: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 300.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (300, 3)[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+  warnings.warn('Lazy modules are a new feature under heavy development '
+Using random initialization
+-------------------------
+Starting evaluation, info:
+Device: cuda
+Policy: train400_26.pth
+Graph: flat300_26_0.col
+k: 26
+Beta: 0.2
+Max steps: 1000
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+-------------------------
+Episode done, score: 99, time: 10.802710056304932, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([737.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(737.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 73, time: 10.513530492782593, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([26.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(26.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 99, time: 10.312329769134521, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-26.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-26.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 72, time: 10.45773434638977, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([27.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(27.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 70, time: 10.364753723144531, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 106, time: 10.406516790390015, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-36.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-36.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 80, time: 10.427740573883057, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([26.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(26.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 75, time: 10.375550508499146, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([5.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(5.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 73, time: 10.359954595565796, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 73, time: 10.409588098526001, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 0, time: 9.891305923461914, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([73.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(73.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[DONE]
+{"score": 0, "episodes": 11, "iterations": 1111000, "time": 114.34374380111694, "time_per_iteration": 0.00010291966138714397, "solution": [19, 15, 9, 19, 24, 22, 9, 2, 11, 5, 9, 19, 0, 3, 7, 21, 19, 19, 8, 14, 11, 4, 12, 14, 10, 24, 14, 0, 18, 24, 15, 21, 22, 17, 15, 10, 6, 17, 16, 7, 25, 19, 8, 5, 1, 20, 21, 19, 25, 6, 17, 0, 21, 15, 23, 1, 11, 21, 1, 3, 20, 7, 23, 16, 2, 5, 7, 4, 8, 14, 7, 14, 2, 4, 15, 14, 2, 22, 11, 7, 9, 18, 3, 0, 10, 9, 8, 12, 19, 8, 2, 18, 12, 25, 23, 16, 25, 6, 18, 17, 5, 1, 24, 16, 0, 3, 7, 16, 1, 24, 23, 3, 17, 14, 3, 21, 10, 8, 3, 18, 20, 13, 12, 12, 2, 5, 24, 6, 12, 16, 24, 23, 14, 18, 4, 22, 24, 22, 8, 7, 13, 20, 17, 18, 0, 9, 0, 7, 4, 12, 7, 11, 23, 2, 18, 14, 22, 14, 4, 25, 2, 6, 2, 9, 20, 25, 17, 1, 5, 9, 10, 1, 15, 10, 24, 23, 13, 2, 6, 11, 2, 21, 18, 4, 25, 13, 11, 25, 21, 6, 24, 17, 17, 17, 5, 10, 20, 16, 20, 13, 13, 22, 8, 21, 12, 6, 20, 22, 17, 17, 23, 16, 20, 0, 20, 13, 7, 23, 25, 2, 10, 16, 8, 5, 10, 6, 22, 13, 24, 19, 16, 21, 0, 18, 24, 8, 15, 4, 15, 1, 3, 14, 1, 9, 0, 18, 15, 15, 3, 23, 12, 1, 12, 9, 22, 21, 12, 19, 23, 23, 5, 3, 8, 11, 12, 8, 16, 14, 15, 20, 6, 20, 13, 10, 6, 1, 11, 4, 11, 5, 6, 22, 11, 5, 13, 19, 18, 9, 25, 25, 13, 4, 16, 19, 4, 10, 3, 7, 3, 0], "graph": "flat300_26_0.col", "k": 26, "max_steps": 1000, "max_tabucol_iters": 100000, "policy": "train400_26.pth", "RL": true}

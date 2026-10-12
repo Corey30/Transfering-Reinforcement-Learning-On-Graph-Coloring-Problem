@@ -1,0 +1,34 @@
+2026-06-17 02:01:15.891992: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-17 02:01:15.910942: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1781632875.939705  236248 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1781632875.946461  236248 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1781632875.964170  236248 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781632875.964187  236248 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781632875.964190  236248 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781632875.964191  236248 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-06-17 02:01:15.969262: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 500.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (500, 3)[0m
+  logger.warn(
+-------------------------
+Starting evaluation, info:
+Mode: RLTabucol0 (random + TabuCol)
+Device: cpu
+Policy: (random policy)
+Graph: DSJC500.1.col
+k: 13
+Beta: 0.2
+Max RL steps: 300
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+-------------------------
+Episode 1 done, score: 0, RL_start: 1004, RL_end: 1004, RL_actual_end: 961.0, RL_best_step: 292, ACO_seed: 1004, ACO_end: 1004, time: 0.49s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1004.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1004.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[Perfect solution found in episode 1!]
+[DONE]
+{"mode": "RLTabucol0 (random + TabuCol)", "score": 0, "episodes": 1, "iterations": 100300, "time": 0.4904029369354248, "time_per_iteration": 4.889361285497755e-06, "solution": [3, 2, 6, 11, 5, 10, 6, 10, 5, 10, 0, 5, 1, 3, 9, 8, 10, 12, 12, 11, 11, 11, 9, 7, 5, 11, 3, 5, 11, 6, 9, 5, 4, 1, 2, 12, 0, 12, 6, 2, 11, 12, 12, 1, 1, 2, 1, 7, 5, 11, 4, 7, 2, 2, 1, 7, 2, 11, 0, 5, 11, 12, 2, 7, 10, 8, 2, 2, 9, 4, 7, 10, 5, 3, 7, 1, 5, 6, 12, 9, 0, 5, 12, 9, 3, 9, 4, 3, 1, 5, 11, 8, 4, 10, 6, 0, 5, 10, 12, 11, 9, 0, 6, 4, 4, 11, 8, 1, 6, 8, 3, 0, 8, 0, 0, 10, 7, 5, 6, 8, 6, 4, 5, 9, 7, 2, 10, 8, 6, 12, 0, 6, 11, 10, 0, 0, 0, 8, 8, 3, 5, 8, 2, 1, 5, 6, 3, 12, 4, 2, 10, 10, 4, 3, 0, 5, 7, 6, 2, 9, 3, 11, 4, 3, 10, 7, 2, 6, 9, 8, 1, 7, 3, 6, 12, 5, 3, 8, 10, 10, 9, 12, 10, 7, 12, 11, 7, 9, 11, 7, 4, 9, 0, 10, 9, 3, 4, 6, 1, 12, 3, 5, 2, 1, 3, 1, 7, 1, 9, 12, 0, 7, 4, 5, 6, 4, 6, 6, 11, 2, 1, 3, 8, 1, 3, 6, 7, 8, 10, 11, 1, 6, 2, 5, 6, 4, 10, 4, 1, 9, 10, 10, 10, 7, 6, 7, 9, 10, 5, 8, 11, 1, 10, 7, 5, 1, 4, 3, 12, 8, 2, 7, 4, 0, 9, 1, 10, 2, 6, 7, 7, 3, 11, 0, 0, 7, 3, 11, 1, 10, 12, 6, 5, 6, 11, 8, 4, 1, 4, 1, 4, 8, 5, 9, 6, 5, 9, 10, 2, 5, 8, 7, 9, 2, 7, 8, 2, 7, 5, 9, 8, 10, 5, 10, 4, 0, 3, 11, 9, 5, 12, 9, 2, 4, 8, 9, 7, 6, 7, 8, 0, 1, 10, 3, 7, 12, 11, 6, 9, 2, 12, 12, 12, 5, 1, 9, 10, 11, 9, 2, 12, 5, 5, 5, 8, 10, 11, 1, 11, 7, 0, 0, 3, 6, 2, 4, 10, 1, 1, 5, 4, 12, 6, 12, 3, 8, 0, 6, 7, 4, 12, 3, 8, 1, 10, 1, 11, 8, 11, 8, 12, 6, 9, 1, 8, 9, 0, 10, 11, 4, 3, 9, 11, 10, 0, 7, 10, 12, 3, 11, 5, 10, 12, 1, 0, 0, 3, 3, 10, 4, 12, 3, 11, 5, 0, 4, 11, 6, 8, 7, 5, 6, 2, 5, 3, 1, 10, 11, 8, 6, 3, 12, 9, 3, 2, 10, 1, 7, 3, 11, 5, 9, 4, 12, 4, 4, 5, 2, 0, 2, 3, 3, 11, 12, 2, 6, 2, 6, 1, 1, 9, 11, 11, 10, 7, 3, 4, 1, 0, 10, 5, 12, 7, 7, 1, 0, 8, 0, 8, 3, 0, 1, 5, 0, 2, 1, 5, 7, 8, 7], "graph": "DSJC500.1.col", "k": 13, "max_steps": 300, "max_tabucol_iters": 100000, "policy": "dummy.pt", "RL": false, "use_aco": false, "inject_mode": null, "aco_ants": 40, "aco_iter": 50, "last_rl_start_score": 1004, "last_rl_end_score": 1004, "last_aco_seed_score": 1004, "last_aco_end_score": 1004, "episode_traces": [{"episode": 1, "t_start": 3.814697265625e-06, "t_end": 0.48880553245544434, "rl_start_score": 1004, "rl_end_score": 1004, "rl_actual_end_score": "961.0", "rl_best_step": 292, "aco_seed_score": 1004, "aco_end_score": 1004, "final_score": 0, "running_best": 0, "aco_iter_x": [], "aco_iter_y": []}]}

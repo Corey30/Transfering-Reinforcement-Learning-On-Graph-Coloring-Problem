@@ -1,0 +1,2 @@
+episode,elapsed_s,start_score,returned_score,tabucol_best_score,running_best_score,tabucol_iterations,tabu_reset
+1,0.226276,1037,0,0,0,8461,1

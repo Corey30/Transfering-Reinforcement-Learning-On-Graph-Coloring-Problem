@@ -1,0 +1,32 @@
+﻿# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Build and native artifacts
+**/target/
+**/*.pyd
+**/*.dll
+**/*.lib
+**/*.exp
+**/*.pdb
+
+# JavaScript dependencies
+**/node_modules/
+
+# Generated experiment output
+**/results/
+**/results_*/
+*.log
+*.tmp
+
+# Local tooling and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

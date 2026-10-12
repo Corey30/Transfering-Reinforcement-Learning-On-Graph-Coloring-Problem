@@ -1,0 +1,38 @@
+{
+  "method": "PureTabucol-episodic-reset",
+  "instances": [
+    "DSJC500.5",
+    "DSJC500.9",
+    "flat1000_76_0",
+    "flat300_28_0",
+    "le450_15c",
+    "le450_15d",
+    "le450_25c",
+    "le450_25d"
+  ],
+  "mode": "rltabucol-k-minus-one",
+  "modes": [
+    "rltabucol-k-minus-one"
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "concurrency": 8,
+  "time_limit_s_per_seed": 18000.0,
+  "tabucol_iterations_per_episode": 10000,
+  "tabu_a": 10,
+  "tabu_alpha": 1.2,
+  "tabucol_return_beta": 0.2,
+  "tabu_reset_each_episode": true,
+  "solution_handoff_each_episode": true,
+  "rl_used": false
+}

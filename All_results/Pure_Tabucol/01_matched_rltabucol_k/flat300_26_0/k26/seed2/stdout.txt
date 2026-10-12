@@ -1,0 +1,4 @@
+[START] graph=flat300_26_0.col k=26 seed=2 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=852 returned=83 tabucol_best=83 running_best=83 elapsed=1.324s
+episode=37 start=58 returned=0 tabucol_best=0 running_best=0 elapsed=41.877s
+[DONE] score=0 success=True episodes=37 time=41.877s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\flat300_26_0\k26\seed2\summary.json

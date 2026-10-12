@@ -1,0 +1,7 @@
+Priority 1 — Add standalone Tabucol as a baseline (easiest, highest reviewer question)
+Tabucol is already implemented in your codebase. Run it on all 11 instances at the same 18,000-second budget with no RL component. This answers the first question any reviewer will ask: "Is RLTabucol better than plain Tabucol?" Right now the paper cannot answer that because RLTabucol₀ already includes 300 random recoloring steps before each Tabucol call, which makes it stronger than standalone Tabucol. Adding this one row to Table 4 transforms the paper's baseline story from two-way to three-way. Requires zero new training, minimal compute.
+
+Priority 2 — Add a structured pheromone prior as a third RLACO baseline (highest scientific impact)
+This is the single experiment that would most change the paper's reception. Implement a degree-based or conflict-count-based pheromone initialization:
+$$\tau_{\text{deg}}(v,c) \propto \frac{1}{1 + \deg(v)}$$
+or simply use the η_conf heuristic values as the initial pheromone. Run it alongside RLACO and RLACO₀ on the 10 transfer instances (10 runs each = 100 total runs, no retraining). If RLACO beats both the random and the structured prior, the claim becomes "learned preferences outperform explicit structural heuristics" — a qualitatively stronger finding that would silence the most common reviewer attack on the RLACO₀ baseline.

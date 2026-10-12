@@ -1,0 +1,112 @@
+2025-10-14 16:18:13.199848: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-14 16:18:13.217643: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1760429893.237791   40250 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1760429893.245521   40250 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1760429893.261125   40250 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1760429893.261156   40250 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1760429893.261158   40250 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1760429893.261160   40250 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-10-14 16:18:13.265842: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 500.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (500, 3)[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+  warnings.warn('Lazy modules are a new feature under heavy development '
+Args use_aco value: True
+Iter 0: Colors=85 Conflicts=159
+Iter 10: Colors=85 Conflicts=130
+Iter 20: Colors=85 Conflicts=116
+Iter 30: Colors=85 Conflicts=116
+Iter 40: Colors=85 Conflicts=116
+Iter 50: Colors=85 Conflicts=116
+Iter 60: Colors=85 Conflicts=116
+Iter 70: Colors=85 Conflicts=116
+Iter 80: Colors=85 Conflicts=116
+Iter 90: Colors=85 Conflicts=116
+Iter 100: Colors=85 Conflicts=116
+Iter 110: Colors=85 Conflicts=116
+Iter 120: Colors=85 Conflicts=116
+Iter 130: Colors=85 Conflicts=116
+Iter 140: Colors=85 Conflicts=116
+-------------------------
+Starting evaluation, info:
+Device: cuda
+Policy: train400_85.pth
+Graph: DSJR500.1c.col
+k: 85
+Beta: 0.2
+Max steps: 1000
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+-------------------------
+Episode done, score: 6, time: 41.91086196899414, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([110.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(110.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 4, time: 41.043813705444336, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 4, time: 41.01134634017944, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 3, time: 40.98702120780945, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.84442901611328, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.885610818862915, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 3, time: 40.818780183792114, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.931703090667725, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 3, time: 40.870572566986084, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.86363673210144, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.86198854446411, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.92942452430725, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.90772294998169, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.831413984298706, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.81997585296631, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.733280658721924, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.84176802635193, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.74867534637451, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.61958885192871, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.77114963531494, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.8801474571228, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.75220489501953, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.785857915878296, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.763776779174805, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.8110556602478, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.760300159454346, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.77822017669678, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.828880071640015, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.81746435165405, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.80746817588806, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.879475116729736, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.810025691986084, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.78030037879944, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.798951387405396, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 41.15977954864502, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.7066650390625, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.86433696746826, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.77263522148132, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.71875238418579, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.83536386489868, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.93988037109375, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 3, time: 40.822346448898315, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 41.025943994522095, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.97606801986694, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.9014630317688, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.87080407142639, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.769264936447144, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.79246759414673, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.822521924972534, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.79976677894592, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.83393454551697, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.786004066467285, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.74127388000488, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.816277503967285, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.906792402267456, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.822282791137695, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.78033638000488, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.810802936553955, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.851648807525635, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 2, time: 40.72086000442505, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.861669301986694, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 1, time: 40.775792837142944, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode done, score: 0, time: 4.0942511558532715, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[DONE]
+{"score": 0, "episodes": 63, "iterations": 6363000, "time": 2537.8033504486084, "time_per_iteration": 0.000398837553111521, "solution": [18, 18, 80, 47, 63, 20, 68, 18, 79, 9, 41, 45, 31, 59, 20, 18, 55, 49, 72, 12, 82, 0, 52, 76, 34, 67, 39, 25, 39, 23, 62, 9, 46, 57, 25, 50, 50, 66, 76, 7, 51, 73, 56, 62, 19, 3, 44, 38, 25, 26, 51, 11, 15, 8, 1, 82, 26, 74, 55, 43, 18, 15, 4, 27, 44, 48, 80, 46, 40, 79, 75, 41, 52, 16, 51, 59, 20, 30, 78, 67, 39, 31, 18, 39, 22, 40, 42, 17, 26, 62, 80, 5, 9, 36, 66, 20, 22, 23, 4, 7, 22, 43, 63, 12, 43, 34, 13, 9, 5, 81, 56, 37, 40, 31, 21, 2, 58, 28, 1, 39, 26, 67, 1, 42, 16, 69, 16, 33, 65, 58, 33, 63, 43, 46, 62, 50, 69, 47, 45, 58, 3, 40, 38, 55, 37, 40, 7, 25, 83, 20, 81, 13, 28, 75, 11, 61, 82, 27, 59, 48, 75, 67, 37, 55, 45, 66, 83, 39, 83, 5, 10, 77, 47, 9, 26, 27, 1, 28, 27, 44, 61, 0, 14, 24, 50, 53, 41, 17, 84, 60, 28, 9, 82, 63, 46, 15, 2, 33, 6, 70, 13, 56, 62, 53, 84, 14, 39, 56, 26, 75, 76, 66, 41, 74, 66, 68, 24, 52, 22, 9, 10, 10, 64, 34, 61, 8, 56, 44, 28, 71, 54, 83, 73, 25, 65, 54, 65, 18, 44, 28, 45, 75, 54, 68, 6, 21, 61, 38, 64, 19, 35, 19, 77, 78, 40, 5, 47, 80, 4, 11, 74, 12, 80, 56, 61, 44, 65, 34, 51, 19, 6, 14, 13, 53, 79, 73, 5, 11, 29, 7, 11, 71, 27, 25, 63, 0, 24, 74, 83, 64, 46, 76, 78, 57, 42, 80, 70, 33, 12, 14, 18, 46, 49, 61, 41, 61, 49, 74, 35, 21, 7, 20, 45, 79, 37, 22, 60, 49, 47, 17, 29, 22, 63, 68, 27, 73, 63, 76, 54, 57, 27, 4, 59, 0, 51, 67, 55, 32, 66, 60, 18, 59, 23, 53, 49, 33, 39, 3, 77, 82, 72, 11, 45, 74, 4, 67, 35, 46, 83, 52, 3, 1, 60, 21, 78, 52, 5, 70, 79, 16, 68, 84, 0, 44, 10, 42, 67, 7, 20, 46, 31, 18, 25, 45, 49, 41, 81, 56, 38, 28, 75, 67, 33, 60, 73, 62, 63, 6, 43, 8, 22, 75, 10, 38, 30, 32, 26, 48, 83, 45, 34, 53, 34, 78, 10, 35, 30, 64, 5, 14, 84, 15, 55, 3, 2, 13, 44, 12, 54, 36, 29, 18, 17, 50, 81, 50, 71, 16, 23, 60, 64, 32, 30, 65, 66, 23, 81, 28, 54, 53, 2, 52, 37, 2, 77, 34, 83, 43, 25, 8, 27, 35, 24, 66, 23, 63, 81, 12, 49, 4, 20, 25, 36, 70, 9, 58, 1, 5, 62, 39, 42, 16, 32, 65, 65, 37, 42, 12, 10, 20, 32, 47, 52, 17, 10, 42, 78, 58, 82, 41], "graph": "DSJR500.1c.col", "k": 85, "max_steps": 1000, "max_tabucol_iters": 100000, "policy": "train400_85.pth", "RL": true}

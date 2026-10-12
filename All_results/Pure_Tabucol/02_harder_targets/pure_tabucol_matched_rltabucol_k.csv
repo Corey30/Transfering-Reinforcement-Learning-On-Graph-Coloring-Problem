@@ -1,0 +1,9 @@
+instance,target_k,completed_runs,time_s,mean_success_time_s,mean_all_time_s,success,best_score,mean_score
+DSJC500.5,49,0,,,,0/10,,
+DSJC500.9,128,0,,,,0/10,,
+flat1000_76_0,87,0,,,,0/10,,
+flat300_28_0,31,0,,,,0/10,,
+le450_15c,16,0,,,,0/10,,
+le450_15d,16,0,,,,0/10,,
+le450_25c,26,0,,,,0/10,,
+le450_25d,26,0,,,,0/10,,

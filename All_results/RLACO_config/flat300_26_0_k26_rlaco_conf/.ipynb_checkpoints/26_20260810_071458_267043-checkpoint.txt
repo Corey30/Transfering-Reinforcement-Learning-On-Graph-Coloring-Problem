@@ -1,0 +1,930 @@
+2026-08-10 07:15:00.679149: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-08-10 07:15:00.693327: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1786317300.709192    2388 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1786317300.714077    2388 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1786317300.727079    2388 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1786317300.727097    2388 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1786317300.727099    2388 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1786317300.727100    2388 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-08-10 07:15:00.730953: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 300.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (300, 3)[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+  warnings.warn('Lazy modules are a new feature under heavy development '
+-------------------------
+Starting evaluation, info:
+Mode: RLACO_conf (episode-wise conflict prior, soft)
+Device: cpu
+Policy: policy.pt
+Graph: flat300_26_0.col
+k: 26
+Beta: 0.2
+Max RL steps: 300
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 14400
+ACO ants: 40
+ACO iterations: 50
+(TabuCol is disabled when --use-aco is on)
+-------------------------
+[ACO local] start: seed_score=210, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=210, seed=210, after=204, improvement=6
+Episode 1 done, score: 204, RL_start: 809, RL_end: 210, RL_actual_end: 210, RL_best_step: 298, ACO_seed: 210, ACO_end: 204, Polish_seed: 204, Polish_end: 204, actions: 300/226 (eff_ratio: 75.33%), time: 44.46s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([599.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(599.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=152, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=152, seed=152, after=152, improvement=0
+Episode 2 done, score: 152, RL_start: 204, RL_end: 152, RL_actual_end: 152, RL_best_step: 252, ACO_seed: 152, ACO_end: 152, Polish_seed: 152, Polish_end: 152, actions: 300/75 (eff_ratio: 25.00%), time: 44.61s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([52.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(52.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=140, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=140, seed=140, after=140, improvement=0
+Episode 3 done, score: 140, RL_start: 152, RL_end: 140, RL_actual_end: 140, RL_best_step: 292, ACO_seed: 140, ACO_end: 140, Polish_seed: 140, Polish_end: 140, actions: 300/47 (eff_ratio: 15.67%), time: 44.05s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([12.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(12.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=138, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=138, seed=138, after=138, improvement=0
+Episode 4 done, score: 138, RL_start: 140, RL_end: 138, RL_actual_end: 138, RL_best_step: 169, ACO_seed: 138, ACO_end: 138, Polish_seed: 138, Polish_end: 138, actions: 300/31 (eff_ratio: 10.33%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=128, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=128, seed=128, after=128, improvement=0
+Episode 5 done, score: 128, RL_start: 138, RL_end: 128, RL_actual_end: 128, RL_best_step: 269, ACO_seed: 128, ACO_end: 128, Polish_seed: 128, Polish_end: 128, actions: 300/39 (eff_ratio: 13.00%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([10.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(10.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=122, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=122, seed=122, after=122, improvement=0
+Episode 6 done, score: 122, RL_start: 128, RL_end: 122, RL_actual_end: 122, RL_best_step: 256, ACO_seed: 122, ACO_end: 122, Polish_seed: 122, Polish_end: 122, actions: 300/28 (eff_ratio: 9.33%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([6.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(6.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 7 done, score: 120, RL_start: 122, RL_end: 120, RL_actual_end: 120, RL_best_step: 299, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/12 (eff_ratio: 4.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 8 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/13 (eff_ratio: 4.33%), time: 44.45s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 9 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/12 (eff_ratio: 4.00%), time: 45.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 10 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/8 (eff_ratio: 2.67%), time: 45.08s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 11 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/12 (eff_ratio: 4.00%), time: 44.13s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 12 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/12 (eff_ratio: 4.00%), time: 44.40s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 13 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/12 (eff_ratio: 4.00%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=120, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=120, seed=120, after=120, improvement=0
+Episode 14 done, score: 120, RL_start: 120, RL_end: 120, RL_actual_end: 120, RL_best_step: 0, ACO_seed: 120, ACO_end: 120, Polish_seed: 120, Polish_end: 120, actions: 300/21 (eff_ratio: 7.00%), time: 44.58s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=119, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=119, seed=119, after=119, improvement=0
+Episode 15 done, score: 119, RL_start: 120, RL_end: 119, RL_actual_end: 119, RL_best_step: 296, ACO_seed: 119, ACO_end: 119, Polish_seed: 119, Polish_end: 119, actions: 300/12 (eff_ratio: 4.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=116, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=116, seed=116, after=116, improvement=0
+Episode 16 done, score: 116, RL_start: 119, RL_end: 116, RL_actual_end: 116, RL_best_step: 259, ACO_seed: 116, ACO_end: 116, Polish_seed: 116, Polish_end: 116, actions: 300/29 (eff_ratio: 9.67%), time: 44.85s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([3.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=115, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=115, seed=115, after=115, improvement=0
+Episode 17 done, score: 115, RL_start: 116, RL_end: 115, RL_actual_end: 115, RL_best_step: 5, ACO_seed: 115, ACO_end: 115, Polish_seed: 115, Polish_end: 115, actions: 300/15 (eff_ratio: 5.00%), time: 44.55s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=114, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=114, seed=114, after=114, improvement=0
+Episode 18 done, score: 114, RL_start: 115, RL_end: 114, RL_actual_end: 114, RL_best_step: 167, ACO_seed: 114, ACO_end: 114, Polish_seed: 114, Polish_end: 114, actions: 300/26 (eff_ratio: 8.67%), time: 44.64s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=114, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=114, seed=114, after=114, improvement=0
+Episode 19 done, score: 114, RL_start: 114, RL_end: 114, RL_actual_end: 114, RL_best_step: 0, ACO_seed: 114, ACO_end: 114, Polish_seed: 114, Polish_end: 114, actions: 300/21 (eff_ratio: 7.00%), time: 45.23s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 20 done, score: 113, RL_start: 114, RL_end: 113, RL_actual_end: 113, RL_best_step: 45, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/20 (eff_ratio: 6.67%), time: 45.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 21 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/16 (eff_ratio: 5.33%), time: 44.50s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 22 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/9 (eff_ratio: 3.00%), time: 45.37s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 23 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/14 (eff_ratio: 4.67%), time: 44.94s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 24 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/11 (eff_ratio: 3.67%), time: 44.36s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 25 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/12 (eff_ratio: 4.00%), time: 44.75s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 26 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/19 (eff_ratio: 6.33%), time: 44.40s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 27 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/24 (eff_ratio: 8.00%), time: 44.41s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 28 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/12 (eff_ratio: 4.00%), time: 44.78s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=113, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=113, seed=113, after=113, improvement=0
+Episode 29 done, score: 113, RL_start: 113, RL_end: 113, RL_actual_end: 113, RL_best_step: 0, ACO_seed: 113, ACO_end: 113, Polish_seed: 113, Polish_end: 113, actions: 300/26 (eff_ratio: 8.67%), time: 45.32s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 30 done, score: 110, RL_start: 113, RL_end: 110, RL_actual_end: 110, RL_best_step: 228, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/23 (eff_ratio: 7.67%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([3.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 31 done, score: 110, RL_start: 110, RL_end: 110, RL_actual_end: 110, RL_best_step: 0, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/18 (eff_ratio: 6.00%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 32 done, score: 110, RL_start: 110, RL_end: 110, RL_actual_end: 110, RL_best_step: 0, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/22 (eff_ratio: 7.33%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 33 done, score: 110, RL_start: 110, RL_end: 110, RL_actual_end: 110, RL_best_step: 0, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/14 (eff_ratio: 4.67%), time: 44.51s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 34 done, score: 110, RL_start: 110, RL_end: 110, RL_actual_end: 110, RL_best_step: 0, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/16 (eff_ratio: 5.33%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=110, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=110, seed=110, after=110, improvement=0
+Episode 35 done, score: 110, RL_start: 110, RL_end: 110, RL_actual_end: 110, RL_best_step: 0, ACO_seed: 110, ACO_end: 110, Polish_seed: 110, Polish_end: 110, actions: 300/17 (eff_ratio: 5.67%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=109, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=109, seed=109, after=109, improvement=0
+Episode 36 done, score: 109, RL_start: 110, RL_end: 109, RL_actual_end: 109, RL_best_step: 190, ACO_seed: 109, ACO_end: 109, Polish_seed: 109, Polish_end: 109, actions: 300/32 (eff_ratio: 10.67%), time: 44.59s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=108, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=108, seed=108, after=108, improvement=0
+Episode 37 done, score: 108, RL_start: 109, RL_end: 108, RL_actual_end: 108, RL_best_step: 202, ACO_seed: 108, ACO_end: 108, Polish_seed: 108, Polish_end: 108, actions: 300/31 (eff_ratio: 10.33%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=107, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=107, seed=107, after=107, improvement=0
+Episode 38 done, score: 107, RL_start: 108, RL_end: 107, RL_actual_end: 107, RL_best_step: 197, ACO_seed: 107, ACO_end: 107, Polish_seed: 107, Polish_end: 107, actions: 300/13 (eff_ratio: 4.33%), time: 44.25s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=107, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=107, seed=107, after=107, improvement=0
+Episode 39 done, score: 107, RL_start: 107, RL_end: 107, RL_actual_end: 107, RL_best_step: 0, ACO_seed: 107, ACO_end: 107, Polish_seed: 107, Polish_end: 107, actions: 300/11 (eff_ratio: 3.67%), time: 44.16s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=107, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=107, seed=107, after=107, improvement=0
+Episode 40 done, score: 107, RL_start: 107, RL_end: 107, RL_actual_end: 107, RL_best_step: 0, ACO_seed: 107, ACO_end: 107, Polish_seed: 107, Polish_end: 107, actions: 300/7 (eff_ratio: 2.33%), time: 44.20s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=106, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=106, seed=106, after=106, improvement=0
+Episode 41 done, score: 106, RL_start: 107, RL_end: 106, RL_actual_end: 106, RL_best_step: 60, ACO_seed: 106, ACO_end: 106, Polish_seed: 106, Polish_end: 106, actions: 300/20 (eff_ratio: 6.67%), time: 44.19s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=105, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=105, seed=105, after=105, improvement=0
+Episode 42 done, score: 105, RL_start: 106, RL_end: 105, RL_actual_end: 105, RL_best_step: 288, ACO_seed: 105, ACO_end: 105, Polish_seed: 105, Polish_end: 105, actions: 300/19 (eff_ratio: 6.33%), time: 44.41s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=105, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=105, seed=105, after=105, improvement=0
+Episode 43 done, score: 105, RL_start: 105, RL_end: 105, RL_actual_end: 105, RL_best_step: 0, ACO_seed: 105, ACO_end: 105, Polish_seed: 105, Polish_end: 105, actions: 300/19 (eff_ratio: 6.33%), time: 44.79s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=104, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=104, seed=104, after=104, improvement=0
+Episode 44 done, score: 104, RL_start: 105, RL_end: 104, RL_actual_end: 104, RL_best_step: 33, ACO_seed: 104, ACO_end: 104, Polish_seed: 104, Polish_end: 104, actions: 300/16 (eff_ratio: 5.33%), time: 44.39s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=104, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=104, seed=104, after=104, improvement=0
+Episode 45 done, score: 104, RL_start: 104, RL_end: 104, RL_actual_end: 104, RL_best_step: 0, ACO_seed: 104, ACO_end: 104, Polish_seed: 104, Polish_end: 104, actions: 300/14 (eff_ratio: 4.67%), time: 44.33s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=104, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=104, seed=104, after=104, improvement=0
+Episode 46 done, score: 104, RL_start: 104, RL_end: 104, RL_actual_end: 104, RL_best_step: 0, ACO_seed: 104, ACO_end: 104, Polish_seed: 104, Polish_end: 104, actions: 300/15 (eff_ratio: 5.00%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=104, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=104, seed=104, after=104, improvement=0
+Episode 47 done, score: 104, RL_start: 104, RL_end: 104, RL_actual_end: 104, RL_best_step: 0, ACO_seed: 104, ACO_end: 104, Polish_seed: 104, Polish_end: 104, actions: 300/19 (eff_ratio: 6.33%), time: 44.48s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=104, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=104, seed=104, after=104, improvement=0
+Episode 48 done, score: 104, RL_start: 104, RL_end: 104, RL_actual_end: 104, RL_best_step: 0, ACO_seed: 104, ACO_end: 104, Polish_seed: 104, Polish_end: 104, actions: 300/10 (eff_ratio: 3.33%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 49 done, score: 103, RL_start: 104, RL_end: 103, RL_actual_end: 103, RL_best_step: 4, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/13 (eff_ratio: 4.33%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 50 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/21 (eff_ratio: 7.00%), time: 44.20s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 51 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/13 (eff_ratio: 4.33%), time: 44.78s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 52 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/30 (eff_ratio: 10.00%), time: 44.31s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 53 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/12 (eff_ratio: 4.00%), time: 44.33s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 54 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/19 (eff_ratio: 6.33%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 55 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/17 (eff_ratio: 5.67%), time: 44.16s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=103, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=103, seed=103, after=103, improvement=0
+Episode 56 done, score: 103, RL_start: 103, RL_end: 103, RL_actual_end: 103, RL_best_step: 0, ACO_seed: 103, ACO_end: 103, Polish_seed: 103, Polish_end: 103, actions: 300/8 (eff_ratio: 2.67%), time: 44.13s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=101, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=101, seed=101, after=101, improvement=0
+Episode 57 done, score: 101, RL_start: 103, RL_end: 101, RL_actual_end: 101, RL_best_step: 149, ACO_seed: 101, ACO_end: 101, Polish_seed: 101, Polish_end: 101, actions: 300/8 (eff_ratio: 2.67%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=101, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=101, seed=101, after=101, improvement=0
+Episode 58 done, score: 101, RL_start: 101, RL_end: 101, RL_actual_end: 101, RL_best_step: 0, ACO_seed: 101, ACO_end: 101, Polish_seed: 101, Polish_end: 101, actions: 300/11 (eff_ratio: 3.67%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=100, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=100, seed=100, after=100, improvement=0
+Episode 59 done, score: 100, RL_start: 101, RL_end: 100, RL_actual_end: 100, RL_best_step: 257, ACO_seed: 100, ACO_end: 100, Polish_seed: 100, Polish_end: 100, actions: 300/14 (eff_ratio: 4.67%), time: 44.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=98, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=98, seed=98, after=98, improvement=0
+Episode 60 done, score: 98, RL_start: 100, RL_end: 98, RL_actual_end: 98, RL_best_step: 163, ACO_seed: 98, ACO_end: 98, Polish_seed: 98, Polish_end: 98, actions: 300/17 (eff_ratio: 5.67%), time: 44.05s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=98, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=98, seed=98, after=98, improvement=0
+Episode 61 done, score: 98, RL_start: 98, RL_end: 98, RL_actual_end: 98, RL_best_step: 0, ACO_seed: 98, ACO_end: 98, Polish_seed: 98, Polish_end: 98, actions: 300/20 (eff_ratio: 6.67%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=97, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=97, seed=97, after=97, improvement=0
+Episode 62 done, score: 97, RL_start: 98, RL_end: 97, RL_actual_end: 97, RL_best_step: 32, ACO_seed: 97, ACO_end: 97, Polish_seed: 97, Polish_end: 97, actions: 300/24 (eff_ratio: 8.00%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 63 done, score: 96, RL_start: 97, RL_end: 96, RL_actual_end: 96, RL_best_step: 51, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/5 (eff_ratio: 1.67%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 64 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/8 (eff_ratio: 2.67%), time: 44.09s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 65 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/11 (eff_ratio: 3.67%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 66 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/11 (eff_ratio: 3.67%), time: 44.97s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 67 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/11 (eff_ratio: 3.67%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 68 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/17 (eff_ratio: 5.67%), time: 44.09s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=96, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=96, seed=96, after=96, improvement=0
+Episode 69 done, score: 96, RL_start: 96, RL_end: 96, RL_actual_end: 96, RL_best_step: 0, ACO_seed: 96, ACO_end: 96, Polish_seed: 96, Polish_end: 96, actions: 300/16 (eff_ratio: 5.33%), time: 44.27s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=94, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=94, seed=94, after=94, improvement=0
+Episode 70 done, score: 94, RL_start: 96, RL_end: 94, RL_actual_end: 94, RL_best_step: 269, ACO_seed: 94, ACO_end: 94, Polish_seed: 94, Polish_end: 94, actions: 300/15 (eff_ratio: 5.00%), time: 44.25s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=94, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=94, seed=94, after=94, improvement=0
+Episode 71 done, score: 94, RL_start: 94, RL_end: 94, RL_actual_end: 94, RL_best_step: 0, ACO_seed: 94, ACO_end: 94, Polish_seed: 94, Polish_end: 94, actions: 300/12 (eff_ratio: 4.00%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=94, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=94, seed=94, after=94, improvement=0
+Episode 72 done, score: 94, RL_start: 94, RL_end: 94, RL_actual_end: 94, RL_best_step: 0, ACO_seed: 94, ACO_end: 94, Polish_seed: 94, Polish_end: 94, actions: 300/13 (eff_ratio: 4.33%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=94, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=94, seed=94, after=94, improvement=0
+Episode 73 done, score: 94, RL_start: 94, RL_end: 94, RL_actual_end: 94, RL_best_step: 0, ACO_seed: 94, ACO_end: 94, Polish_seed: 94, Polish_end: 94, actions: 300/17 (eff_ratio: 5.67%), time: 44.03s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=93, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=93, seed=93, after=93, improvement=0
+Episode 74 done, score: 93, RL_start: 94, RL_end: 93, RL_actual_end: 93, RL_best_step: 284, ACO_seed: 93, ACO_end: 93, Polish_seed: 93, Polish_end: 93, actions: 300/13 (eff_ratio: 4.33%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=93, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=93, seed=93, after=93, improvement=0
+Episode 75 done, score: 93, RL_start: 93, RL_end: 93, RL_actual_end: 93, RL_best_step: 0, ACO_seed: 93, ACO_end: 93, Polish_seed: 93, Polish_end: 93, actions: 300/12 (eff_ratio: 4.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=93, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=93, seed=93, after=93, improvement=0
+Episode 76 done, score: 93, RL_start: 93, RL_end: 93, RL_actual_end: 93, RL_best_step: 0, ACO_seed: 93, ACO_end: 93, Polish_seed: 93, Polish_end: 93, actions: 300/11 (eff_ratio: 3.67%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=92, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=92, seed=92, after=92, improvement=0
+Episode 77 done, score: 92, RL_start: 93, RL_end: 92, RL_actual_end: 92, RL_best_step: 151, ACO_seed: 92, ACO_end: 92, Polish_seed: 92, Polish_end: 92, actions: 300/14 (eff_ratio: 4.67%), time: 44.34s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=92, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=92, seed=92, after=92, improvement=0
+Episode 78 done, score: 92, RL_start: 92, RL_end: 92, RL_actual_end: 92, RL_best_step: 0, ACO_seed: 92, ACO_end: 92, Polish_seed: 92, Polish_end: 92, actions: 300/15 (eff_ratio: 5.00%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=91, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=91, seed=91, after=91, improvement=0
+Episode 79 done, score: 91, RL_start: 92, RL_end: 91, RL_actual_end: 91, RL_best_step: 262, ACO_seed: 91, ACO_end: 91, Polish_seed: 91, Polish_end: 91, actions: 300/24 (eff_ratio: 8.00%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=91, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=91, seed=91, after=91, improvement=0
+Episode 80 done, score: 91, RL_start: 91, RL_end: 91, RL_actual_end: 91, RL_best_step: 0, ACO_seed: 91, ACO_end: 91, Polish_seed: 91, Polish_end: 91, actions: 300/18 (eff_ratio: 6.00%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=91, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=91, seed=91, after=91, improvement=0
+Episode 81 done, score: 91, RL_start: 91, RL_end: 91, RL_actual_end: 91, RL_best_step: 0, ACO_seed: 91, ACO_end: 91, Polish_seed: 91, Polish_end: 91, actions: 300/18 (eff_ratio: 6.00%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=91, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=91, seed=91, after=91, improvement=0
+Episode 82 done, score: 91, RL_start: 91, RL_end: 91, RL_actual_end: 91, RL_best_step: 0, ACO_seed: 91, ACO_end: 91, Polish_seed: 91, Polish_end: 91, actions: 300/9 (eff_ratio: 3.00%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 83 done, score: 90, RL_start: 91, RL_end: 90, RL_actual_end: 90, RL_best_step: 214, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.27s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 84 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/8 (eff_ratio: 2.67%), time: 44.38s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 85 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 86 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.47s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 87 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/15 (eff_ratio: 5.00%), time: 44.37s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 88 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/10 (eff_ratio: 3.33%), time: 44.50s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 89 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 43.99s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 90 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/10 (eff_ratio: 3.33%), time: 44.03s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 91 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/7 (eff_ratio: 2.33%), time: 44.39s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 92 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 93 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/23 (eff_ratio: 7.67%), time: 44.41s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 94 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.43s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 95 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.25s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 96 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/4 (eff_ratio: 1.33%), time: 44.39s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 97 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 98 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.36s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 99 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/25 (eff_ratio: 8.33%), time: 45.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 100 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/22 (eff_ratio: 7.33%), time: 44.83s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 101 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.81s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 102 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/16 (eff_ratio: 5.33%), time: 44.51s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 103 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 104 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.16s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 105 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/16 (eff_ratio: 5.33%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 106 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.06s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 107 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/10 (eff_ratio: 3.33%), time: 44.19s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 108 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/8 (eff_ratio: 2.67%), time: 44.34s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 109 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.34s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 110 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.06s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 111 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 112 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.40s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 113 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 114 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/15 (eff_ratio: 5.00%), time: 44.43s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 115 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/20 (eff_ratio: 6.67%), time: 44.23s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 116 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/17 (eff_ratio: 5.67%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 117 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/17 (eff_ratio: 5.67%), time: 43.98s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 118 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/18 (eff_ratio: 6.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 119 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 120 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/17 (eff_ratio: 5.67%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 121 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.47s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 122 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/21 (eff_ratio: 7.00%), time: 44.29s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 123 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/10 (eff_ratio: 3.33%), time: 44.38s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 124 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.02s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 125 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/17 (eff_ratio: 5.67%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 126 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/16 (eff_ratio: 5.33%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 127 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/12 (eff_ratio: 4.00%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 128 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 129 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/12 (eff_ratio: 4.00%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 130 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 131 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/6 (eff_ratio: 2.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 132 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/7 (eff_ratio: 2.33%), time: 44.02s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 133 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/8 (eff_ratio: 2.67%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 134 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/1 (eff_ratio: 0.33%), time: 44.09s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 135 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/6 (eff_ratio: 2.00%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 136 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/12 (eff_ratio: 4.00%), time: 44.06s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 137 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/4 (eff_ratio: 1.33%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 138 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/21 (eff_ratio: 7.00%), time: 43.97s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 139 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.31s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 140 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/6 (eff_ratio: 2.00%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 141 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/6 (eff_ratio: 2.00%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 142 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.13s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 143 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 144 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 145 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 146 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 43.96s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 147 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/8 (eff_ratio: 2.67%), time: 44.54s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 148 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.33s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 149 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/5 (eff_ratio: 1.67%), time: 43.96s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 150 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/7 (eff_ratio: 2.33%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 151 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.29s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 152 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.33s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 153 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.31s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 154 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/10 (eff_ratio: 3.33%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 155 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.39s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 156 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.20s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 157 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 158 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/14 (eff_ratio: 4.67%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 159 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/8 (eff_ratio: 2.67%), time: 44.28s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 160 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/11 (eff_ratio: 3.67%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 161 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/7 (eff_ratio: 2.33%), time: 44.05s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 162 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/9 (eff_ratio: 3.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 163 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/5 (eff_ratio: 1.67%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=90, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=90, seed=90, after=90, improvement=0
+Episode 164 done, score: 90, RL_start: 90, RL_end: 90, RL_actual_end: 90, RL_best_step: 0, ACO_seed: 90, ACO_end: 90, Polish_seed: 90, Polish_end: 90, actions: 300/13 (eff_ratio: 4.33%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 165 done, score: 89, RL_start: 90, RL_end: 89, RL_actual_end: 89, RL_best_step: 38, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/8 (eff_ratio: 2.67%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 166 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/7 (eff_ratio: 2.33%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 167 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/5 (eff_ratio: 1.67%), time: 44.58s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 168 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 169 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/3 (eff_ratio: 1.00%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 170 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/7 (eff_ratio: 2.33%), time: 44.38s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 171 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.13s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 172 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/5 (eff_ratio: 1.67%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 173 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/5 (eff_ratio: 1.67%), time: 44.27s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 174 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/12 (eff_ratio: 4.00%), time: 45.08s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 175 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/7 (eff_ratio: 2.33%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 176 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/8 (eff_ratio: 2.67%), time: 45.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 177 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.37s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 178 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/12 (eff_ratio: 4.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 179 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 180 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/15 (eff_ratio: 5.00%), time: 45.02s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 181 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/12 (eff_ratio: 4.00%), time: 44.25s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 182 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/12 (eff_ratio: 4.00%), time: 44.16s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 183 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.02s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 184 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/3 (eff_ratio: 1.00%), time: 44.43s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=89, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=89, seed=89, after=89, improvement=0
+Episode 185 done, score: 89, RL_start: 89, RL_end: 89, RL_actual_end: 89, RL_best_step: 0, ACO_seed: 89, ACO_end: 89, Polish_seed: 89, Polish_end: 89, actions: 300/9 (eff_ratio: 3.00%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=88, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=88, seed=88, after=88, improvement=0
+Episode 186 done, score: 88, RL_start: 89, RL_end: 88, RL_actual_end: 88, RL_best_step: 254, ACO_seed: 88, ACO_end: 88, Polish_seed: 88, Polish_end: 88, actions: 300/19 (eff_ratio: 6.33%), time: 44.45s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 187 done, score: 87, RL_start: 88, RL_end: 87, RL_actual_end: 87, RL_best_step: 77, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 45.36s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([1.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 188 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.60s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 189 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 44.44s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 190 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 191 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.23s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 192 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/1 (eff_ratio: 0.33%), time: 44.48s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 193 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.55s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 194 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.43s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 195 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.34s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 196 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 197 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.38s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 198 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.70s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 199 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.73s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 200 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/5 (eff_ratio: 1.67%), time: 44.82s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 201 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 45.09s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 202 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.44s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 203 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 45.28s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 204 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/20 (eff_ratio: 6.67%), time: 45.92s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 205 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.69s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 206 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.07s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 207 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.20s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 208 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 209 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.01s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 210 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 211 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/18 (eff_ratio: 6.00%), time: 44.27s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 212 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 213 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.53s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 214 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.66s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 215 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 216 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 45.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 217 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 218 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 219 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.44s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 220 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 45.35s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 221 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 45.66s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 222 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.64s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 223 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.28s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 224 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.65s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 225 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 226 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.33s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 227 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 45.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 228 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.94s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 229 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.57s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 230 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/17 (eff_ratio: 5.67%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 231 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 232 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.32s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 233 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 234 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 43.93s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 235 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 236 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.35s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 237 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.14s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 238 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/3 (eff_ratio: 1.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 239 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 44.09s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 240 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.42s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 241 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.27s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 242 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/18 (eff_ratio: 6.00%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 243 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 244 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.42s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 245 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/4 (eff_ratio: 1.33%), time: 44.13s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 246 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.35s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 247 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/3 (eff_ratio: 1.00%), time: 44.26s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 248 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/3 (eff_ratio: 1.00%), time: 43.99s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 249 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.00s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 250 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/17 (eff_ratio: 5.67%), time: 44.05s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 251 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 252 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/19 (eff_ratio: 6.33%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 253 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.20s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 254 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 255 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.50s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 256 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/16 (eff_ratio: 5.33%), time: 44.35s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 257 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 258 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/13 (eff_ratio: 4.33%), time: 44.31s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 259 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 260 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 261 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 262 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 45.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 263 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 44.93s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 264 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.12s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 265 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.19s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 266 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.69s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 267 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.24s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 268 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/5 (eff_ratio: 1.67%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 269 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/5 (eff_ratio: 1.67%), time: 44.19s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 270 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/14 (eff_ratio: 4.67%), time: 44.08s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 271 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/4 (eff_ratio: 1.33%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 272 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.71s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 273 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.70s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 274 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 275 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 276 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/3 (eff_ratio: 1.00%), time: 44.15s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 277 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/0 (eff_ratio: 0.00%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 278 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.21s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 279 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.98s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 280 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.30s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 281 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 282 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.04s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 283 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/10 (eff_ratio: 3.33%), time: 44.48s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 284 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/12 (eff_ratio: 4.00%), time: 44.25s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 285 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/5 (eff_ratio: 1.67%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 286 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 45.84s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 287 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.11s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 288 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 45.57s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 289 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/11 (eff_ratio: 3.67%), time: 44.16s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 290 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/15 (eff_ratio: 5.00%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 291 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/7 (eff_ratio: 2.33%), time: 44.18s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 292 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/1 (eff_ratio: 0.33%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 293 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/8 (eff_ratio: 2.67%), time: 44.10s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 294 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/4 (eff_ratio: 1.33%), time: 44.34s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 295 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/9 (eff_ratio: 3.00%), time: 44.46s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 296 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/6 (eff_ratio: 2.00%), time: 44.17s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 297 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/4 (eff_ratio: 1.33%), time: 44.28s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft
+[ACO local] done: before=87, seed=87, after=87, improvement=0
+Episode 298 done, score: 87, RL_start: 87, RL_end: 87, RL_actual_end: 87, RL_best_step: 0, ACO_seed: 87, ACO_end: 87, Polish_seed: 87, Polish_end: 87, actions: 300/2 (eff_ratio: 0.67%), time: 44.22s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([0.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[ACO local] start: seed_score=87, ants=40, iter=50, inject_mode=soft

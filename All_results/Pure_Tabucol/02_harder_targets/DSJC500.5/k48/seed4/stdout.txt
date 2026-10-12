@@ -1,0 +1,42 @@
+[START] graph=DSJC500.5.col k=48 seed=4 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=1293 returned=33 tabucol_best=33 running_best=33 elapsed=5.811s
+[RESUME] episode=50, elapsed=254.923s, best_score=11
+[START] graph=DSJC500.5.col k=48 seed=4 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=100 start=12 returned=24 tabucol_best=12 running_best=11 elapsed=497.499s
+episode=200 start=12 returned=12 tabucol_best=12 running_best=10 elapsed=943.536s
+episode=300 start=8 returned=8 tabucol_best=8 running_best=6 elapsed=1405.393s
+episode=400 start=17 returned=16 tabucol_best=16 running_best=6 elapsed=1822.343s
+episode=500 start=16 returned=16 tabucol_best=16 running_best=6 elapsed=2253.992s
+episode=600 start=19 returned=19 tabucol_best=19 running_best=6 elapsed=2700.952s
+episode=700 start=18 returned=18 tabucol_best=18 running_best=6 elapsed=3140.140s
+episode=800 start=26 returned=15 tabucol_best=15 running_best=6 elapsed=3580.255s
+episode=900 start=11 returned=11 tabucol_best=11 running_best=6 elapsed=4001.668s
+episode=1000 start=12 returned=6 tabucol_best=6 running_best=5 elapsed=4425.646s
+episode=1100 start=27 returned=19 tabucol_best=14 running_best=5 elapsed=4844.457s
+episode=1200 start=13 returned=13 tabucol_best=13 running_best=5 elapsed=5264.789s
+episode=1300 start=29 returned=22 tabucol_best=22 running_best=5 elapsed=5685.856s
+episode=1400 start=13 returned=13 tabucol_best=13 running_best=5 elapsed=6128.901s
+episode=1500 start=11 returned=11 tabucol_best=11 running_best=5 elapsed=6615.232s
+episode=1600 start=35 returned=26 tabucol_best=26 running_best=5 elapsed=7109.849s
+episode=1700 start=19 returned=15 tabucol_best=15 running_best=5 elapsed=7609.584s
+episode=1800 start=13 returned=9 tabucol_best=9 running_best=5 elapsed=8087.357s
+episode=1900 start=15 returned=41 tabucol_best=15 running_best=5 elapsed=8535.943s
+episode=2000 start=16 returned=15 tabucol_best=15 running_best=5 elapsed=8976.434s
+episode=2100 start=16 returned=14 tabucol_best=14 running_best=5 elapsed=9421.677s
+episode=2200 start=12 returned=12 tabucol_best=12 running_best=5 elapsed=9883.559s
+episode=2300 start=5 returned=5 tabucol_best=5 running_best=4 elapsed=10383.522s
+episode=2400 start=11 returned=6 tabucol_best=6 running_best=4 elapsed=10889.174s
+episode=2500 start=13 returned=13 tabucol_best=13 running_best=4 elapsed=11423.743s
+episode=2600 start=10 returned=10 tabucol_best=10 running_best=4 elapsed=11914.207s
+episode=2700 start=6 returned=6 tabucol_best=6 running_best=4 elapsed=12373.906s
+episode=2800 start=33 returned=24 tabucol_best=24 running_best=4 elapsed=12884.385s
+episode=2900 start=10 returned=21 tabucol_best=10 running_best=4 elapsed=13373.384s
+episode=3000 start=16 returned=11 tabucol_best=11 running_best=4 elapsed=13885.859s
+episode=3100 start=13 returned=13 tabucol_best=13 running_best=4 elapsed=14412.560s
+episode=3200 start=18 returned=18 tabucol_best=18 running_best=4 elapsed=14995.224s
+episode=3300 start=13 returned=23 tabucol_best=13 running_best=4 elapsed=15500.482s
+episode=3400 start=4 returned=4 tabucol_best=4 running_best=4 elapsed=15971.240s
+episode=3500 start=28 returned=19 tabucol_best=19 running_best=4 elapsed=16446.374s
+episode=3600 start=12 returned=12 tabucol_best=12 running_best=4 elapsed=16973.564s
+episode=3700 start=20 returned=14 tabucol_best=14 running_best=4 elapsed=17540.543s
+[DONE] score=4 success=False episodes=3777 time=18002.737s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_bounded_k_minus_one_c8\DSJC500.5\k48\seed4\summary.json

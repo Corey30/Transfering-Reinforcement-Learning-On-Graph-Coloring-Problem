@@ -1,0 +1,9 @@
+[PROTOCOL] mode=rltabucol-k-minus-one runs=10 concurrency=8 budget=18000.0s T=10000 A=10 alpha=1.2 beta=0.2
+[LAUNCH] DSJC500.5 k=48 seed=3
+[LAUNCH] DSJC500.5 k=48 seed=5
+[LAUNCH] DSJC500.5 k=48 seed=6
+[LAUNCH] DSJC500.5 k=48 seed=4
+[LAUNCH] DSJC500.5 k=48 seed=1
+[LAUNCH] DSJC500.5 k=48 seed=7
+[LAUNCH] DSJC500.5 k=48 seed=2
+[LAUNCH] DSJC500.5 k=48 seed=0

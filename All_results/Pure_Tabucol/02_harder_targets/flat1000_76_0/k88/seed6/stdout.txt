@@ -1,0 +1,10 @@
+[START] graph=flat1000_76_0.col k=88 seed=6 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=2875 returned=41 tabucol_best=41 running_best=41 elapsed=32.417s
+episode=100 start=9 returned=9 tabucol_best=9 running_best=9 elapsed=2400.363s
+episode=200 start=9 returned=13 tabucol_best=9 running_best=8 elapsed=6990.287s
+episode=300 start=11 returned=14 tabucol_best=11 running_best=8 elapsed=10211.639s
+episode=400 start=8 returned=10 tabucol_best=8 running_best=7 elapsed=12204.974s
+episode=500 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=13951.681s
+episode=600 start=11 returned=7 tabucol_best=5 running_best=3 elapsed=15797.866s
+episode=700 start=6 returned=6 tabucol_best=6 running_best=3 elapsed=17373.808s
+[DONE] score=3 success=False episodes=740 time=18007.203s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_bounded_k_minus_one_c8\flat1000_76_0\k88\seed6\summary.json

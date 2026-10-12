@@ -1,0 +1,68 @@
+
+libgomp: Invalid value for environment variable OMP_NUM_THREADS
+2026-04-20 18:48:55.434277: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1776682135.449879    2022 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1776682135.454973    2022 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1776682135.467813    2022 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1776682135.467875    2022 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1776682135.467920    2022 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1776682135.467963    2022 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-04-20 18:48:55.471769: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 500.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (500, 3)[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+  warnings.warn('Lazy modules are a new feature under heavy development '
+-------------------------
+Starting evaluation, info:
+Device: cpu
+Policy: policy.pt
+Graph: DSJC500.9.col
+k: 128
+Beta: 0.2
+Max steps: 1000
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+Use ACO: False
+-------------------------
+Episode 1 done, score: 10, time: 331.52s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([861.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(861.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 2 done, score: 5, time: 316.36s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([5.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(5.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 3 done, score: 5, time: 323.86s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 4 done, score: 4, time: 338.88s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 5 done, score: 6, time: 317.34s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 6 done, score: 3, time: 326.62s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 7 done, score: 2, time: 231.40s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 8 done, score: 5, time: 35.19s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 9 done, score: 2, time: 34.90s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 10 done, score: 1, time: 36.74s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 11 done, score: 3, time: 35.81s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 12 done, score: 1, time: 34.56s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 13 done, score: 5, time: 34.90s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-4.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-4.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 14 done, score: 2, time: 36.85s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 15 done, score: 4, time: 36.36s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 16 done, score: 3, time: 37.05s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 17 done, score: 2, time: 35.02s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 18 done, score: 2, time: 37.40s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 19 done, score: 2, time: 34.79s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 20 done, score: 2, time: 35.17s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 21 done, score: 3, time: 35.62s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 22 done, score: 2, time: 37.42s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 23 done, score: 2, time: 35.21s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 24 done, score: 2, time: 34.96s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 25 done, score: 6, time: 36.11s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-4.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-4.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 26 done, score: 2, time: 36.92s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([4.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(4.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 27 done, score: 3, time: 36.67s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 28 done, score: 1, time: 36.39s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([2.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 29 done, score: 1, time: 36.93s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([0.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(0.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 30 done, score: 4, time: 36.24s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 31 done, score: 1, time: 34.86s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([3.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 32 done, score: 0, time: 14.28s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[Perfect solution found in episode 32!]
+[DONE]
+{"score": 0, "episodes": 32, "iterations": 3232000, "time": 3062.666497707367, "time_per_iteration": 0.0009476072084490616, "solution": [40, 21, 51, 54, 89, 95, 74, 11, 26, 87, 0, 25, 10, 16, 79, 61, 18, 41, 3, 18, 82, 26, 125, 99, 83, 29, 76, 110, 33, 14, 37, 94, 46, 75, 30, 71, 34, 0, 66, 5, 55, 62, 98, 109, 43, 28, 83, 48, 43, 103, 8, 71, 25, 84, 116, 69, 74, 109, 81, 7, 68, 111, 73, 63, 11, 55, 106, 66, 13, 115, 44, 78, 20, 120, 9, 39, 24, 31, 47, 120, 66, 106, 57, 17, 82, 9, 93, 73, 113, 105, 121, 54, 99, 104, 67, 32, 11, 70, 36, 73, 54, 5, 23, 28, 67, 77, 127, 58, 1, 24, 16, 96, 86, 42, 6, 35, 55, 45, 64, 62, 85, 57, 72, 64, 45, 32, 76, 101, 7, 93, 87, 49, 96, 97, 71, 46, 112, 2, 115, 37, 107, 117, 33, 86, 81, 66, 36, 116, 54, 58, 59, 42, 97, 109, 32, 57, 95, 26, 115, 125, 27, 87, 91, 88, 92, 13, 20, 50, 69, 39, 52, 7, 86, 42, 93, 48, 61, 50, 50, 69, 21, 63, 53, 50, 79, 46, 2, 61, 84, 56, 0, 9, 102, 88, 86, 15, 80, 38, 42, 124, 32, 123, 49, 89, 22, 41, 14, 47, 77, 108, 56, 26, 76, 76, 91, 74, 27, 124, 48, 82, 10, 89, 114, 27, 91, 102, 65, 43, 77, 116, 85, 114, 70, 23, 118, 10, 77, 81, 55, 80, 117, 28, 92, 40, 105, 53, 30, 100, 37, 64, 84, 118, 0, 82, 16, 23, 110, 113, 15, 68, 1, 49, 34, 10, 17, 67, 5, 13, 60, 14, 12, 101, 7, 71, 4, 53, 127, 18, 103, 45, 87, 44, 114, 119, 102, 89, 2, 122, 90, 16, 92, 3, 98, 9, 29, 83, 113, 101, 20, 4, 85, 106, 94, 21, 119, 45, 4, 19, 112, 95, 91, 119, 40, 95, 127, 94, 15, 22, 25, 123, 103, 31, 106, 80, 19, 4, 110, 96, 90, 112, 118, 75, 22, 39, 79, 85, 61, 122, 60, 105, 84, 104, 108, 104, 27, 72, 108, 44, 41, 23, 31, 73, 70, 111, 57, 30, 24, 110, 105, 6, 78, 123, 88, 65, 99, 39, 8, 62, 3, 63, 67, 11, 49, 68, 29, 65, 125, 65, 6, 56, 15, 38, 121, 8, 120, 22, 62, 51, 80, 38, 37, 45, 29, 47, 58, 24, 59, 56, 104, 64, 12, 82, 53, 18, 103, 35, 33, 118, 75, 14, 78, 52, 1, 93, 58, 51, 47, 122, 51, 97, 16, 68, 75, 108, 100, 70, 94, 35, 33, 6, 40, 36, 117, 98, 12, 17, 109, 50, 97, 52, 2, 15, 43, 125, 19, 35, 52, 96, 34, 31, 112, 100, 30, 72, 98, 100, 107, 107, 28, 72, 12, 83, 126, 5, 46, 90, 126, 121, 13, 115, 19, 59, 21, 60, 58, 123, 20, 59, 60, 1, 69, 63, 25, 111, 44, 48, 126, 74, 113, 38, 17, 86, 38, 8, 41, 81, 79, 36, 118, 34], "graph": "DSJC500.9.col", "k": 128, "max_steps": 1000, "max_tabucol_iters": 100000, "policy": "policy.pt", "RL": true, "use_aco": false, "aco_strategy": "None"}

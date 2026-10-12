@@ -1,0 +1,36 @@
+2026-04-26 00:06:48.674050: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-04-26 00:06:48.686364: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1777133208.699778    2874 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1777133208.703898    2874 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1777133208.715101    2874 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1777133208.715117    2874 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1777133208.715118    2874 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1777133208.715119    2874 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-04-26 00:06:48.718450: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 250.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (250, 3)[0m
+  logger.warn(
+-------------------------
+Starting evaluation, info:
+Device: cpu
+Policy: dummy.pt
+Graph: DSJC250.5.col
+k: 28
+Beta: 0.2
+Max steps: 1000
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+Use ACO: False
+-------------------------
+Episode 1 done, score: 3, time: 4.74s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([557.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(557.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 2 done, score: 4, time: 4.69s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([-1.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(-1.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 3 done, score: 0, time: 2.54s, result: {'n/ep': 1, 'n/st': 1000, 'rews': array([4.]), 'lens': array([1000]), 'idxs': array([0]), 'rew': np.float64(4.0), 'len': np.float64(1000.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[Perfect solution found in episode 3!]
+[DONE]
+{"score": 0, "episodes": 3, "iterations": 303000, "time": 11.979857206344604, "time_per_iteration": 3.953748252919011e-05, "solution": [23, 17, 0, 2, 9, 11, 12, 8, 11, 24, 2, 27, 20, 13, 13, 23, 25, 16, 25, 25, 10, 22, 22, 22, 27, 24, 22, 7, 3, 26, 17, 12, 11, 19, 23, 7, 19, 11, 6, 6, 0, 10, 1, 21, 19, 27, 21, 11, 3, 3, 5, 3, 4, 13, 21, 5, 6, 12, 7, 26, 23, 3, 15, 21, 11, 25, 9, 6, 12, 1, 24, 16, 5, 16, 12, 14, 14, 18, 12, 4, 11, 13, 13, 21, 15, 13, 18, 17, 8, 7, 27, 2, 15, 16, 14, 25, 4, 17, 15, 4, 2, 24, 24, 15, 4, 20, 10, 15, 8, 18, 9, 26, 4, 9, 22, 7, 2, 3, 8, 1, 17, 27, 18, 0, 8, 7, 10, 4, 10, 6, 12, 16, 18, 27, 27, 19, 19, 7, 0, 14, 3, 4, 6, 15, 24, 25, 22, 8, 13, 6, 23, 20, 19, 26, 25, 2, 9, 8, 5, 14, 5, 3, 27, 17, 16, 4, 18, 19, 17, 24, 14, 5, 25, 18, 22, 3, 13, 17, 0, 7, 23, 1, 6, 10, 21, 25, 23, 15, 2, 22, 20, 0, 26, 20, 14, 13, 8, 23, 1, 24, 9, 26, 14, 23, 11, 10, 18, 5, 21, 4, 6, 24, 6, 11, 5, 12, 26, 9, 8, 13, 10, 2, 9, 1, 1, 14, 5, 0, 12, 17, 10, 19, 4, 0, 11, 1, 0, 9, 16, 10, 21, 26, 24, 20, 27, 4, 26, 20, 0, 12], "graph": "DSJC250.5.col", "k": 28, "max_steps": 1000, "max_tabucol_iters": 100000, "policy": "dummy.pt", "RL": false, "use_aco": false, "aco_strategy": "None"}

@@ -1,0 +1,8 @@
+[START] graph=DSJC500.5.col k=49 seed=3 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=1284 returned=22 tabucol_best=22 running_best=22 elapsed=0.591s
+episode=100 start=6 returned=6 tabucol_best=6 running_best=5 elapsed=160.539s
+episode=200 start=10 returned=10 tabucol_best=10 running_best=5 elapsed=328.030s
+episode=300 start=2 returned=7 tabucol_best=2 running_best=2 elapsed=491.594s
+episode=400 start=2 returned=2 tabucol_best=2 running_best=2 elapsed=654.715s
+episode=482 start=1 returned=0 tabucol_best=0 running_best=0 elapsed=785.939s
+[DONE] score=0 success=True episodes=482 time=785.939s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\DSJC500.5\k49\seed3\summary.json

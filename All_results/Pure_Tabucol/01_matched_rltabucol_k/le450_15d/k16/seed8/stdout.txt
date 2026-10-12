@@ -1,0 +1,12 @@
+[START] graph=le450_15d.col k=16 seed=8 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=1046 returned=6 tabucol_best=6 running_best=6 elapsed=0.284s
+episode=100 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=45.716s
+episode=200 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=95.637s
+episode=300 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=145.890s
+episode=400 start=1 returned=4 tabucol_best=1 running_best=1 elapsed=196.352s
+episode=500 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=246.870s
+episode=600 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=297.768s
+episode=700 start=1 returned=4 tabucol_best=1 running_best=1 elapsed=347.888s
+episode=800 start=2 returned=5 tabucol_best=1 running_best=1 elapsed=398.124s
+episode=804 start=1 returned=0 tabucol_best=0 running_best=0 elapsed=399.882s
+[DONE] score=0 success=True episodes=804 time=399.882s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\le450_15d\k16\seed8\summary.json

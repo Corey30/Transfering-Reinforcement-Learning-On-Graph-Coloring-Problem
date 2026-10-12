@@ -1,0 +1,9 @@
+instance,k_best,time_s,success,best_score_at_k_best,search_complete
+DSJC500.5,,,0/10,,False
+DSJC500.9,,,0/10,,False
+flat1000_76_0,,,0/10,,False
+flat300_28_0,,,0/10,,False
+le450_15c,,,0/10,,False
+le450_15d,,,0/10,,False
+le450_25c,,,0/10,,False
+le450_25d,,,0/10,,False

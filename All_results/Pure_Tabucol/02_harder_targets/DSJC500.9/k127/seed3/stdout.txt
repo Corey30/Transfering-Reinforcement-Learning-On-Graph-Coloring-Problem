@@ -1,0 +1,21 @@
+[START] graph=DSJC500.9.col k=127 seed=3 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=882 returned=18 tabucol_best=18 running_best=18 elapsed=12.711s
+episode=100 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=1040.566s
+episode=200 start=7 returned=4 tabucol_best=4 running_best=3 elapsed=1927.393s
+episode=300 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=2866.309s
+episode=400 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=3920.529s
+episode=500 start=4 returned=4 tabucol_best=4 running_best=3 elapsed=4876.299s
+episode=600 start=4 returned=3 tabucol_best=3 running_best=3 elapsed=5731.197s
+episode=700 start=2 returned=2 tabucol_best=2 running_best=2 elapsed=6647.113s
+episode=800 start=3 returned=4 tabucol_best=3 running_best=2 elapsed=7645.537s
+episode=900 start=3 returned=3 tabucol_best=3 running_best=2 elapsed=8607.178s
+episode=1000 start=2 returned=6 tabucol_best=2 running_best=2 elapsed=9461.292s
+episode=1100 start=2 returned=2 tabucol_best=2 running_best=2 elapsed=10356.628s
+episode=1200 start=2 returned=2 tabucol_best=2 running_best=2 elapsed=11349.405s
+episode=1300 start=3 returned=2 tabucol_best=2 running_best=2 elapsed=12338.679s
+episode=1400 start=2 returned=2 tabucol_best=2 running_best=2 elapsed=13315.004s
+episode=1500 start=2 returned=5 tabucol_best=2 running_best=2 elapsed=14332.149s
+episode=1600 start=2 returned=2 tabucol_best=2 running_best=1 elapsed=15416.826s
+episode=1700 start=2 returned=2 tabucol_best=2 running_best=1 elapsed=16565.929s
+episode=1800 start=3 returned=3 tabucol_best=3 running_best=1 elapsed=17621.781s
+[DONE] score=1 success=False episodes=1853 time=18002.384s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_bounded_k_minus_one_c8\DSJC500.9\k127\seed3\summary.json

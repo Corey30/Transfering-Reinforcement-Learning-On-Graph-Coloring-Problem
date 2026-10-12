@@ -1,0 +1,106 @@
+[PROTOCOL] mode=rltabucol-k-minus-one runs=10 concurrency=8 budget=18000.0s T=10000 A=10 alpha=1.2 beta=0.2
+[GLOBAL QUEUE] pending=80 concurrency=8
+[LAUNCH] DSJC500.5 k=48 seed=0
+[LAUNCH] DSJC500.5 k=48 seed=1
+[LAUNCH] DSJC500.5 k=48 seed=3
+[LAUNCH] DSJC500.5 k=48 seed=2
+[LAUNCH] DSJC500.5 k=48 seed=6
+[LAUNCH] DSJC500.5 k=48 seed=4
+[LAUNCH] DSJC500.5 k=48 seed=5
+[LAUNCH] DSJC500.5 k=48 seed=7
+[EXIT 0] DSJC500.5 k=48 seed=0
+[LAUNCH] DSJC500.5 k=48 seed=8
+[EXIT 0] DSJC500.5 k=48 seed=1
+[LAUNCH] DSJC500.5 k=48 seed=9
+[EXIT 0] DSJC500.5 k=48 seed=4
+[LAUNCH] DSJC500.9 k=127 seed=0
+[EXIT 0] DSJC500.5 k=48 seed=3
+[LAUNCH] DSJC500.9 k=127 seed=1
+[EXIT 0] DSJC500.5 k=48 seed=5
+[LAUNCH] DSJC500.9 k=127 seed=2
+[EXIT 0] DSJC500.5 k=48 seed=2
+[LAUNCH] DSJC500.9 k=127 seed=3
+[EXIT 0] DSJC500.5 k=48 seed=6
+[LAUNCH] DSJC500.9 k=127 seed=4
+[EXIT 0] DSJC500.5 k=48 seed=7
+[LAUNCH] DSJC500.9 k=127 seed=5
+[EXIT 0] DSJC500.5 k=48 seed=8
+[LAUNCH] DSJC500.9 k=127 seed=6
+[EXIT 0] DSJC500.9 k=127 seed=1
+[LAUNCH] DSJC500.9 k=127 seed=7
+[EXIT 0] DSJC500.5 k=48 seed=9
+[LAUNCH] DSJC500.9 k=127 seed=8
+[EXIT 0] DSJC500.9 k=127 seed=3
+[LAUNCH] DSJC500.9 k=127 seed=9
+[EXIT 0] DSJC500.9 k=127 seed=4
+[LAUNCH] le450_15c k=15 seed=0
+[EXIT 0] DSJC500.9 k=127 seed=2
+[LAUNCH] le450_15c k=15 seed=1
+[EXIT 0] DSJC500.9 k=127 seed=0
+[LAUNCH] le450_15c k=15 seed=2
+[EXIT 0] DSJC500.9 k=127 seed=5
+[LAUNCH] le450_15c k=15 seed=3
+[EXIT 0] DSJC500.9 k=127 seed=7
+[LAUNCH] le450_15c k=15 seed=4
+[EXIT 0] DSJC500.9 k=127 seed=8
+[LAUNCH] le450_15c k=15 seed=5
+[EXIT 0] DSJC500.9 k=127 seed=6
+[LAUNCH] le450_15c k=15 seed=6
+[EXIT 0] le450_15c k=15 seed=1
+[LAUNCH] le450_15c k=15 seed=7
+[EXIT 0] le450_15c k=15 seed=0
+[LAUNCH] le450_15c k=15 seed=8
+[EXIT 0] le450_15c k=15 seed=2
+[LAUNCH] le450_15c k=15 seed=9
+[EXIT 0] DSJC500.9 k=127 seed=9
+[LAUNCH] le450_15d k=15 seed=0
+[EXIT 0] le450_15c k=15 seed=3
+[LAUNCH] le450_15d k=15 seed=1
+[EXIT 0] le450_15c k=15 seed=4
+[LAUNCH] le450_15d k=15 seed=2
+[EXIT 0] le450_15c k=15 seed=5
+[LAUNCH] le450_15d k=15 seed=3
+[EXIT 0] le450_15c k=15 seed=6
+[LAUNCH] le450_15d k=15 seed=4
+[EXIT 0] le450_15c k=15 seed=9
+[LAUNCH] le450_15d k=15 seed=5
+[EXIT 0] le450_15c k=15 seed=8
+[EXIT 0] le450_15c k=15 seed=7
+[LAUNCH] le450_15d k=15 seed=6
+[LAUNCH] le450_15d k=15 seed=7
+[EXIT 0] le450_15d k=15 seed=0
+[LAUNCH] le450_15d k=15 seed=8
+[EXIT 0] le450_15d k=15 seed=1
+[LAUNCH] le450_15d k=15 seed=9
+[EXIT 0] le450_15d k=15 seed=2
+[LAUNCH] le450_25c k=25 seed=0
+[EXIT 0] le450_15d k=15 seed=3
+[LAUNCH] le450_25c k=25 seed=1
+[EXIT 0] le450_15d k=15 seed=4
+[LAUNCH] le450_25c k=25 seed=2
+[EXIT 0] le450_15d k=15 seed=5
+[LAUNCH] le450_25c k=25 seed=3
+[EXIT 0] le450_15d k=15 seed=7
+[LAUNCH] le450_25c k=25 seed=4
+[EXIT 0] le450_15d k=15 seed=6
+[LAUNCH] le450_25c k=25 seed=5
+[EXIT 0] le450_15d k=15 seed=8
+[LAUNCH] le450_25c k=25 seed=6
+[EXIT 0] le450_15d k=15 seed=9
+[LAUNCH] le450_25c k=25 seed=7
+[EXIT 0] le450_25c k=25 seed=0
+[LAUNCH] le450_25c k=25 seed=8
+[EXIT 0] le450_25c k=25 seed=1
+[LAUNCH] le450_25c k=25 seed=9
+[EXIT 0] le450_25c k=25 seed=2
+[LAUNCH] le450_25d k=25 seed=0
+[EXIT 0] le450_25c k=25 seed=3
+[LAUNCH] le450_25d k=25 seed=1
+[EXIT 0] le450_25c k=25 seed=4
+[LAUNCH] le450_25d k=25 seed=2
+[EXIT 0] le450_25c k=25 seed=5
+[LAUNCH] le450_25d k=25 seed=3
+[EXIT 0] le450_25c k=25 seed=6
+[LAUNCH] le450_25d k=25 seed=4
+[EXIT 0] le450_25c k=25 seed=7
+[LAUNCH] le450_25d k=25 seed=5

@@ -1,0 +1,8 @@
+[START] graph=flat300_26_0.col k=26 seed=1 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=799 returned=106 tabucol_best=85 running_best=106 elapsed=1.387s
+episode=100 start=95 returned=78 tabucol_best=78 running_best=65 elapsed=115.936s
+episode=200 start=67 returned=67 tabucol_best=67 running_best=65 elapsed=258.637s
+episode=300 start=76 returned=76 tabucol_best=76 running_best=64 elapsed=403.960s
+episode=400 start=74 returned=69 tabucol_best=69 running_best=64 elapsed=525.036s
+episode=420 start=70 returned=0 tabucol_best=0 running_best=0 elapsed=547.887s
+[DONE] score=0 success=True episodes=420 time=547.887s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\flat300_26_0\k26\seed1\summary.json

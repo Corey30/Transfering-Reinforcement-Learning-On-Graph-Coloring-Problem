@@ -1,0 +1,25 @@
+[START] graph=flat1000_76_0.col k=87 seed=2 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=2816 returned=48 tabucol_best=48 running_best=48 elapsed=15.522s
+episode=100 start=11 returned=11 tabucol_best=11 running_best=8 elapsed=1346.835s
+episode=200 start=9 returned=9 tabucol_best=9 running_best=8 elapsed=2419.574s
+episode=300 start=8 returned=12 tabucol_best=8 running_best=7 elapsed=3422.809s
+episode=400 start=8 returned=8 tabucol_best=8 running_best=7 elapsed=4331.905s
+episode=500 start=7 returned=7 tabucol_best=7 running_best=7 elapsed=5538.745s
+episode=600 start=7 returned=7 tabucol_best=7 running_best=4 elapsed=6672.908s
+episode=700 start=4 returned=4 tabucol_best=4 running_best=4 elapsed=7805.202s
+episode=800 start=8 returned=4 tabucol_best=4 running_best=1 elapsed=8504.986s
+episode=900 start=7 returned=6 tabucol_best=6 running_best=1 elapsed=9155.436s
+episode=1000 start=4 returned=4 tabucol_best=4 running_best=1 elapsed=9797.276s
+episode=1100 start=3 returned=3 tabucol_best=3 running_best=1 elapsed=10430.176s
+episode=1200 start=3 returned=6 tabucol_best=3 running_best=1 elapsed=11064.142s
+episode=1300 start=2 returned=2 tabucol_best=2 running_best=1 elapsed=11699.150s
+episode=1400 start=3 returned=3 tabucol_best=3 running_best=1 elapsed=12368.791s
+episode=1500 start=4 returned=5 tabucol_best=4 running_best=1 elapsed=13011.896s
+episode=1600 start=5 returned=5 tabucol_best=5 running_best=1 elapsed=13653.991s
+episode=1700 start=5 returned=5 tabucol_best=5 running_best=1 elapsed=14286.731s
+episode=1800 start=9 returned=9 tabucol_best=9 running_best=1 elapsed=14921.735s
+episode=1900 start=11 returned=11 tabucol_best=7 running_best=1 elapsed=15568.321s
+episode=2000 start=7 returned=12 tabucol_best=7 running_best=1 elapsed=16217.008s
+episode=2100 start=5 returned=6 tabucol_best=5 running_best=1 elapsed=16866.066s
+episode=2200 start=3 returned=3 tabucol_best=3 running_best=1 elapsed=17515.284s
+[DONE] score=1 success=False episodes=2276 time=18002.985s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\flat1000_76_0\k87\seed2\summary.json

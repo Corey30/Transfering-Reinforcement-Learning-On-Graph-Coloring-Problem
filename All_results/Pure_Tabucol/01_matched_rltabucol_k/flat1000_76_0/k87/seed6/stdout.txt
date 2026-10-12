@@ -1,0 +1,16 @@
+[START] graph=flat1000_76_0.col k=87 seed=6 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=2906 returned=58 tabucol_best=58 running_best=58 elapsed=7.070s
+episode=100 start=12 returned=12 tabucol_best=12 running_best=12 elapsed=1107.007s
+episode=200 start=10 returned=7 tabucol_best=7 running_best=7 elapsed=2533.732s
+episode=300 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=3847.707s
+episode=400 start=5 returned=6 tabucol_best=5 running_best=5 elapsed=5377.180s
+episode=500 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=6723.692s
+episode=600 start=5 returned=6 tabucol_best=5 running_best=5 elapsed=8143.881s
+episode=700 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=9547.090s
+episode=800 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=10851.008s
+episode=900 start=7 returned=5 tabucol_best=5 running_best=5 elapsed=11974.101s
+episode=1000 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=13125.000s
+episode=1100 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=14396.359s
+episode=1200 start=5 returned=6 tabucol_best=5 running_best=5 elapsed=15614.398s
+episode=1300 start=5 returned=5 tabucol_best=5 running_best=5 elapsed=16920.117s
+[DONE] score=5 success=False episodes=1386 time=18000.760s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\flat1000_76_0\k87\seed6\summary.json

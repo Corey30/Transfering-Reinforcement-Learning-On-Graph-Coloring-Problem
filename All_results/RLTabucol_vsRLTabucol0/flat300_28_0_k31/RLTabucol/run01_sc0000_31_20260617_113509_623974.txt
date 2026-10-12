@@ -1,0 +1,39 @@
+2026-06-17 11:35:11.898534: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-06-17 11:35:11.914080: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1781667311.932098    1577 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1781667311.937716    1577 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1781667311.954738    1577 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781667311.954778    1577 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781667311.954781    1577 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1781667311.954783    1577 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2026-06-17 11:35:11.960176: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:22: UserWarning: [33mWARN: It seems a Box observation space is an image but the `dtype` is not `np.uint8`, actual type: float32. If the Box observation space is not an image, we recommend flattening the observation to have only a 1D vector.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:27: UserWarning: [33mWARN: It seems a Box observation space is an image but the lower and upper bounds are not [0, 255]. Actual lower bound: 0.0, upper bound: 300.0. Generally, CNN policies assume observations are within that range, so you may encounter an issue if the observation values are not.[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/gymnasium/utils/passive_env_checker.py:35: UserWarning: [33mWARN: A Box observation space has an unconventional shape (neither an image, nor a 1D vector). We recommend flattening the observation to have only a 1D vector or use a custom policy to properly process the data. Actual observation shape: (300, 3)[0m
+  logger.warn(
+/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/lazy.py:181: UserWarning: Lazy modules are a new feature under heavy development so changes to the API or functionality can happen at any moment.
+  warnings.warn('Lazy modules are a new feature under heavy development '
+-------------------------
+Starting evaluation, info:
+Mode: RLTabucol
+Device: cpu
+Policy: policy.pt
+Graph: flat300_28_0.col
+k: 31
+Beta: 0.2
+Max RL steps: 300
+Max tabucol iters: 100000
+Max episodes: None
+Time limit: 18000
+-------------------------
+Episode 1 done, score: 7, RL_start: 708, RL_end: 708, RL_actual_end: 130.0, RL_best_step: 298, ACO_seed: 708, ACO_end: 708, time: 36.80s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([701.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(701.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 2 done, score: 5, RL_start: 7, RL_end: 7, RL_actual_end: 7.0, RL_best_step: 0, ACO_seed: 7, ACO_end: 7, time: 39.46s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 3 done, score: 2, RL_start: 5, RL_end: 5, RL_actual_end: 5.0, RL_best_step: 0, ACO_seed: 5, ACO_end: 5, time: 37.52s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([3.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(3.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+Episode 4 done, score: 0, RL_start: 2, RL_end: 2, RL_actual_end: 2.0, RL_best_step: 0, ACO_seed: 2, ACO_end: 2, time: 36.62s, result: {'n/ep': 1, 'n/st': 300, 'rews': array([2.]), 'lens': array([300]), 'idxs': array([0]), 'rew': np.float64(2.0), 'len': np.float64(300.0), 'rew_std': np.float64(0.0), 'len_std': np.float64(0.0)}
+[Perfect solution found in episode 4!]
+[DONE]
+{"mode": "RLTabucol", "score": 0, "episodes": 4, "iterations": 401200, "time": 150.4102566242218, "time_per_iteration": 0.00037490093874432154, "solution": [6, 24, 8, 10, 19, 28, 13, 8, 7, 8, 4, 11, 7, 21, 28, 14, 22, 0, 9, 11, 1, 26, 1, 9, 17, 5, 8, 10, 6, 27, 10, 5, 18, 0, 9, 0, 15, 19, 26, 13, 21, 24, 23, 10, 24, 20, 30, 18, 25, 22, 29, 1, 16, 24, 19, 27, 0, 1, 4, 18, 8, 25, 9, 9, 10, 5, 7, 20, 28, 24, 12, 15, 16, 1, 2, 12, 23, 2, 30, 27, 11, 23, 3, 17, 20, 20, 9, 28, 30, 10, 9, 17, 22, 22, 24, 11, 24, 24, 13, 8, 5, 25, 0, 14, 5, 17, 12, 13, 5, 13, 18, 5, 7, 14, 0, 29, 12, 0, 2, 27, 22, 16, 19, 24, 8, 16, 12, 14, 23, 3, 15, 4, 2, 17, 26, 30, 2, 13, 8, 21, 26, 4, 5, 3, 0, 2, 28, 3, 26, 30, 8, 21, 4, 1, 18, 9, 3, 14, 7, 7, 15, 8, 15, 16, 21, 16, 29, 28, 4, 2, 18, 4, 7, 16, 2, 6, 6, 8, 7, 22, 23, 30, 22, 7, 12, 5, 0, 26, 24, 20, 15, 19, 13, 25, 4, 15, 27, 24, 12, 11, 17, 0, 10, 29, 0, 27, 14, 13, 1, 14, 26, 23, 30, 25, 6, 29, 29, 29, 26, 23, 20, 16, 6, 4, 28, 22, 19, 9, 15, 25, 27, 6, 10, 27, 3, 23, 2, 2, 3, 27, 10, 15, 11, 6, 23, 4, 3, 24, 20, 21, 12, 18, 26, 17, 3, 12, 30, 25, 9, 10, 21, 8, 25, 19, 7, 12, 20, 19, 14, 30, 17, 25, 14, 18, 16, 26, 11, 7, 23, 28, 28, 28, 30, 1, 5, 2, 17, 13, 11, 16, 0, 14, 19, 25, 17, 29, 15, 12, 18, 4], "graph": "flat300_28_0.col", "k": 31, "max_steps": 300, "max_tabucol_iters": 100000, "policy": "policy.pt", "RL": true, "use_aco": false, "inject_mode": null, "aco_ants": 40, "aco_iter": 50, "last_rl_start_score": 2, "last_rl_end_score": 2, "last_aco_seed_score": 2, "last_aco_end_score": 2, "episode_traces": [{"episode": 1, "t_start": 8.344650268554688e-06, "t_end": 36.803478956222534, "rl_start_score": 708, "rl_end_score": 708, "rl_actual_end_score": "130.0", "rl_best_step": 298, "aco_seed_score": 708, "aco_end_score": 708, "final_score": 7, "running_best": 7, "aco_iter_x": [], "aco_iter_y": []}, {"episode": 2, "t_start": 36.80558967590332, "t_end": 76.26985764503479, "rl_start_score": 7, "rl_end_score": 7, "rl_actual_end_score": "7.0", "rl_best_step": 0, "aco_seed_score": 7, "aco_end_score": 7, "final_score": 5, "running_best": 5, "aco_iter_x": [], "aco_iter_y": []}, {"episode": 3, "t_start": 76.27186131477356, "t_end": 113.78830170631409, "rl_start_score": 5, "rl_end_score": 5, "rl_actual_end_score": "5.0", "rl_best_step": 0, "aco_seed_score": 5, "aco_end_score": 5, "final_score": 2, "running_best": 2, "aco_iter_x": [], "aco_iter_y": []}, {"episode": 4, "t_start": 113.79025387763977, "t_end": 150.40817880630493, "rl_start_score": 2, "rl_end_score": 2, "rl_actual_end_score": "2.0", "rl_best_step": 0, "aco_seed_score": 2, "aco_end_score": 2, "final_score": 0, "running_best": 0, "aco_iter_x": [], "aco_iter_y": []}]}

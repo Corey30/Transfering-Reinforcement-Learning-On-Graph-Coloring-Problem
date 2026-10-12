@@ -1,0 +1,36 @@
+[START] graph=le450_15d.col k=16 seed=6 backend=native T=10000 A=10 alpha=1.2 beta=0.2 budget=18000.0s
+episode=1 start=1011 returned=11 tabucol_best=11 running_best=11 elapsed=0.261s
+episode=100 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=48.107s
+episode=200 start=3 returned=8 tabucol_best=3 running_best=3 elapsed=100.439s
+episode=300 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=153.019s
+episode=400 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=205.349s
+episode=500 start=8 returned=3 tabucol_best=3 running_best=3 elapsed=258.131s
+episode=600 start=3 returned=5 tabucol_best=3 running_best=3 elapsed=310.914s
+episode=700 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=363.043s
+episode=800 start=5 returned=3 tabucol_best=3 running_best=3 elapsed=415.264s
+episode=900 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=468.126s
+episode=1000 start=11 returned=3 tabucol_best=3 running_best=3 elapsed=520.957s
+episode=1100 start=3 returned=5 tabucol_best=3 running_best=3 elapsed=573.355s
+episode=1200 start=10 returned=3 tabucol_best=3 running_best=3 elapsed=625.530s
+episode=1300 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=677.828s
+episode=1400 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=730.729s
+episode=1500 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=783.492s
+episode=1600 start=5 returned=3 tabucol_best=3 running_best=3 elapsed=835.808s
+episode=1700 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=888.275s
+episode=1800 start=3 returned=5 tabucol_best=3 running_best=3 elapsed=941.420s
+episode=1900 start=3 returned=8 tabucol_best=3 running_best=3 elapsed=994.201s
+episode=2000 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=1047.102s
+episode=2100 start=3 returned=4 tabucol_best=3 running_best=3 elapsed=1099.553s
+episode=2200 start=3 returned=3 tabucol_best=3 running_best=3 elapsed=1152.236s
+episode=2300 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=1205.042s
+episode=2400 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=1258.103s
+episode=2500 start=5 returned=7 tabucol_best=5 running_best=3 elapsed=1310.387s
+episode=2600 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=1362.757s
+episode=2700 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=1415.487s
+episode=2800 start=5 returned=5 tabucol_best=5 running_best=3 elapsed=1468.347s
+episode=2900 start=3 returned=3 tabucol_best=1 running_best=1 elapsed=1520.674s
+episode=3000 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=1570.960s
+episode=3100 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=1621.162s
+episode=3200 start=1 returned=1 tabucol_best=1 running_best=1 elapsed=1672.528s
+episode=3232 start=1 returned=0 tabucol_best=0 running_best=0 elapsed=1688.467s
+[DONE] score=0 success=True episodes=3232 time=1688.467s summary=C:\Users\46594\Desktop\RLTCol-main (3)\RLTCol-main\experiments\pure_tabucol_baseline\results_rltabucol_k_5h\le450_15d\k16\seed6\summary.json
