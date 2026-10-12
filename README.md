@@ -1,7 +1,6 @@
 # RLTabucol Transfer
 
-Reproducible experiments for reinforcement-learning-guided graph coloring. The project evaluates a PPO recoloring policy with Tabucol, transfers the learned policy to ant colony optimization (RLACO), and benchmarks the resulting solver family against the original RLTabucol source workflow and terminal Tabucol refinements.
-
+The project evaluates a PPO recoloring policy with Tabucol and implements the RLTabucol pipeline, transfers the learned policy to ant colony optimization (RLACO), and design the RLACO->Tabucol pipeline to acquire optimization gain.
 ## Experiments
 
 | Component | Purpose | Main entry point |
